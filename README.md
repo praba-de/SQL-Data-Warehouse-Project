@@ -26,6 +26,8 @@ Scope – Use only the latest dataset; historical data tracking is not required.
 
 Documentation – Provide clear documentation of the data model for business users and analytics teams.
 
+---
+
 ### BI: Analytics & Reporting
 #### Objective
 
@@ -41,11 +43,17 @@ Sales Trends – Analyze sales growth and patterns over time.
 
 These insights help stakeholders track key business metrics and support data-driven decision-making.
 
+---
+
 ### License
 
 This project is licensed under the MIT License.
 You are free to use, modify, and distribute this project with proper attribution.
 
+---
+
 ### About Me
 
 Hi ! I’m Prabalatha, an aspiring Data Engineer passionate about building scalable data pipelines, designing modern data warehouses, and transforming raw data into meaningful insights.
+
+---
