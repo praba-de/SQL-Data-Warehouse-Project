@@ -1,4 +1,4 @@
-# End to End Data Engineering : Data Warehouse & Analytics Project
+# Data Engineering : Data Warehouse & Analytics Project
 
 Welcome to the **Data Warehouse and Analytics Project** repository !!
 
