@@ -7,7 +7,7 @@ This project is designed as a portfolio project to showcase practical Data Engin
 
 ---
 
-## Project Requirements 
+## 🚀 Project Requirements  
 
 ### Building the Data Warehouse ( Data Engineering )
 
