@@ -9,12 +9,12 @@ This project is designed as a portfolio project to showcase practical Data Engin
 
 ## Project Requirements 
 
-### Building the Data Warehouse (Data Engineering )
+### Building the Data Warehouse ( Data Engineering )
 
-#### 📌 Objective
+#### Objective
 Develop a modern data warehouse using Microsoft SQL Server to consolidate sales data and enable analytical reporting for better decision-making.
 
-#### ⚙️ Specifications
+#### Specifications
 
 Data Sources – Import data from two systems (ERP and CRM) provided as CSV files.
 
@@ -26,12 +26,12 @@ Scope – Use only the latest dataset; historical data tracking is not required.
 
 Documentation – Provide clear documentation of the data model for business users and analytics teams.
 
-### 📊 BI: Analytics & Reporting
-#### 📌 Objective
+### BI: Analytics & Reporting
+#### Objective
 
 Develop SQL-based analytics using Microsoft SQL Server to generate insights from the data warehouse.
 
-#### 🔍 Key Insights
+#### Key Insights
 
 Customer Behavior – Understand customer purchasing patterns.
 
@@ -41,11 +41,11 @@ Sales Trends – Analyze sales growth and patterns over time.
 
 These insights help stakeholders track key business metrics and support data-driven decision-making.
 
-### 🛡️ License
+### License
 
 This project is licensed under the MIT License.
 You are free to use, modify, and distribute this project with proper attribution.
 
-### 🌟 About Me
+### About Me
 
 Hi ! I’m Prabalatha, an aspiring Data Engineer passionate about building scalable data pipelines, designing modern data warehouses, and transforming raw data into meaningful insights.
