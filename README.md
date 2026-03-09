@@ -1,6 +1,7 @@
 # End to End Data Engineering : Data Warehouse & Analytics Project
 
 Welcome to the **Data Warehouse and Analytics Project** repository !!
+
 This project demonstrates how to build a modern data warehouse and analytics pipeline using data engineering best practices. It covers data ingestion, transformation, storage in a data warehouse, and generating insights through analytics and visualization.
 
 This project is designed as a portfolio project to showcase practical Data Engineering and Data Analytics skills.
