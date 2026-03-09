@@ -16,15 +16,15 @@ Develop a modern data warehouse using Microsoft SQL Server to consolidate sales 
 
 #### Specifications
 
-**Data Sources** – Import data from two systems (ERP and CRM) provided as CSV files.
+- **Data Sources** – Import data from two systems (ERP and CRM) provided as CSV files.
 
-**Data Quality** – Clean and resolve data quality issues before analysis.
+- **Data Quality** – Clean and resolve data quality issues before analysis.
 
-**Data Integration** – Combine both sources into a single, analytics-friendly data model.
+- **Data Integration** – Combine both sources into a single, analytics-friendly data model.
 
-**Scope** – Use only the latest dataset; historical data tracking is not required.
+- **Scope** – Use only the latest dataset; historical data tracking is not required.
 
-Documentation – Provide clear documentation of the data model for business users and analytics teams.
+- **Documentation** – Provide clear documentation of the data model for business users and analytics teams.
 
 ---
 
@@ -36,11 +36,11 @@ Develop SQL-based analytics using Microsoft SQL Server to generate insights from
 
 #### Key Insights
 
-**Customer Behavior** – Understand customer purchasing patterns.
+- **Customer Behavior** – Understand customer purchasing patterns.
 
-**Product Performance** – Identify top-performing and low-performing products.
+- **Product Performance** – Identify top-performing and low-performing products.
 
-**Sales Trends** – Analyze sales growth and patterns over time.
+- **Sales Trends** – Analyze sales growth and patterns over time.
 
 These insights help stakeholders track key business metrics and support data-driven decision-making.
 
