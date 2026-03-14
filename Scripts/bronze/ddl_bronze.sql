@@ -1,3 +1,6 @@
+USE DataWarehouse;
+GO
+
 /*
 ===============================================================================
 DDL Script: Create Bronze Tables
@@ -24,8 +27,6 @@ Usage:
 ===============================================================================
 */
 
-USE DataWarehouse;
-GO
 
 -- =====================================================
 -- CRM TABLES
@@ -49,8 +50,6 @@ CREATE TABLE bronze.crm_customer_info (
     dwh_load_date            DATETIME2 DEFAULT GETDATE()
 );
 GO
-
-
 -- -----------------------------------
 -- CRM Product Info
 -- -----------------------------------
@@ -69,8 +68,6 @@ CREATE TABLE bronze.crm_product_info (
     dwh_load_date       DATETIME2 DEFAULT GETDATE()
 );
 GO
-
-
 -- -----------------------------------
 -- CRM Sales Details
 -- -----------------------------------
