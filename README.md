@@ -1,4 +1,4 @@
-# Data Engineering : Data Warehouse & Analytics Project
+# Data Warehouse & Analytics Project
 
 Welcome to the **Data Warehouse and Analytics Project** repository !!
 
@@ -57,5 +57,6 @@ You are free to use, modify, and distribute this project with proper attribution
 ### About Me
 
 Hi ! I’m Prabalatha, an aspiring Data Engineer passionate about building scalable data pipelines, designing modern data warehouses, and transforming raw data into meaningful insights.
+🔗 GitHub: https://github.com/praba-de
 
 ---
