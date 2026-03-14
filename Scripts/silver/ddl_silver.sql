@@ -1,3 +1,6 @@
+USE DataWarehouse;
+GO
+    
 /*
 ===============================================================================
 DDL Script: Create Silver Tables
