@@ -5,20 +5,20 @@ DDL Script: Create Silver Tables
 Script Purpose:
     This script creates tables in the 'silver' schema of the data warehouse.
 
-    The Silver layer represents the cleaned and transformed data from the
-    Bronze layer. These tables store structured and standardized data that
-    is ready for further transformation and analytics.
-
-Key Features:
-    • Stores cleansed and standardized data
-    • Adds data warehouse metadata column (dwh_create_date)
-    • Supports the Medallion Architecture (Bronze → Silver → Gold)
+    The Silver layer represents cleaned and standardized data transformed
+    from the Bronze layer as part of the Medallion Architecture
+    (Bronze → Silver → Gold).
 
 Usage:
-    Run this script to create or redefine the DDL structure of the
-    'silver' tables in the Data Warehouse.
+    This script drops existing Silver tables (if they exist) and recreates them.
 ===============================================================================
 */
+
+---------------------------------------------------------
+-- CRM CUSTOMER INFO
+---------------------------------------------------------
+IF OBJECT_ID('silver.crm_customer_info', 'U') IS NOT NULL
+DROP TABLE silver.crm_customer_info;
 
 CREATE TABLE silver.crm_customer_info (
     customer_id             INT,
@@ -31,6 +31,12 @@ CREATE TABLE silver.crm_customer_info (
     dwh_create_date         DATETIME2 DEFAULT GETDATE()
 );
 
+---------------------------------------------------------
+-- CRM PRODUCT INFO
+---------------------------------------------------------
+IF OBJECT_ID('silver.crm_product_info', 'U') IS NOT NULL
+DROP TABLE silver.crm_product_info;
+
 CREATE TABLE silver.crm_product_info (
     product_id              INT,
     category_id             NVARCHAR(50),
@@ -42,6 +48,12 @@ CREATE TABLE silver.crm_product_info (
     product_end_date        DATE,
     dwh_create_date         DATETIME2 DEFAULT GETDATE()
 );
+
+---------------------------------------------------------
+-- CRM SALES DETAILS
+---------------------------------------------------------
+IF OBJECT_ID('silver.crm_sales_details', 'U') IS NOT NULL
+DROP TABLE silver.crm_sales_details;
 
 CREATE TABLE silver.crm_sales_details (
     sales_order_num         NVARCHAR(50),
@@ -56,6 +68,12 @@ CREATE TABLE silver.crm_sales_details (
     dwh_create_date         DATETIME2 DEFAULT GETDATE()
 );
 
+---------------------------------------------------------
+-- ERP CUSTOMER
+---------------------------------------------------------
+IF OBJECT_ID('silver.erp_customer', 'U') IS NOT NULL
+DROP TABLE silver.erp_customer;
+
 CREATE TABLE silver.erp_customer (
     cid                     NVARCHAR(50),
     birth_date              DATE,
@@ -63,11 +81,23 @@ CREATE TABLE silver.erp_customer (
     dwh_create_date         DATETIME2 DEFAULT GETDATE()
 );
 
+---------------------------------------------------------
+-- ERP LOCATION
+---------------------------------------------------------
+IF OBJECT_ID('silver.erp_location', 'U') IS NOT NULL
+DROP TABLE silver.erp_location;
+
 CREATE TABLE silver.erp_location (
     cid                     NVARCHAR(50),
     country                 NVARCHAR(50),
     dwh_create_date         DATETIME2 DEFAULT GETDATE()
 );
+
+---------------------------------------------------------
+-- ERP PRODUCT CATEGORY
+---------------------------------------------------------
+IF OBJECT_ID('silver.erp_product_category', 'U') IS NOT NULL
+DROP TABLE silver.erp_product_category;
 
 CREATE TABLE silver.erp_product_category (
     id                      NVARCHAR(50),
