@@ -40,10 +40,10 @@ BEGIN
 
         SET @batch_start_time = GETDATE();
 
-        PRINT '==========================================';
+        PRINT '===========================================================';
         PRINT 'Stored Procedure: Load Bronze Layer (Source -> Bronze)';
         PRINT 'Start Time: ' + CONVERT(VARCHAR, @batch_start_time, 120);
-        PRINT '==========================================';
+        PRINT '===========================================================';
 
 
         -------------------------------------------------------
@@ -204,7 +204,7 @@ BEGIN
 
         SET @batch_end_time = GETDATE();
 
-        PRINT '==========================================';
+        PRINT '===========================================================';
         PRINT 'Loading Bronze Layer Completed Successfully';
         PRINT 'Batch Start Time : ' + CONVERT(VARCHAR, @batch_start_time, 120);
         PRINT 'Batch End Time   : ' + CONVERT(VARCHAR, @batch_end_time, 120);
@@ -221,7 +221,7 @@ BEGIN
 
         SET @batch_end_time = GETDATE();
 
-        PRINT '==========================================';
+        PRINT '===========================================================';
         PRINT 'ERROR OCCURRED DURING LOADING BRONZE LAYER';
         PRINT 'Error Message  : ' + ERROR_MESSAGE();
         PRINT 'Error Number   : ' + CAST(ERROR_NUMBER() AS NVARCHAR(10));
@@ -230,7 +230,7 @@ BEGIN
         PRINT 'Batch Start Time: ' + CONVERT(VARCHAR, @batch_start_time, 120);
         PRINT 'Batch End Time  : ' + CONVERT(VARCHAR, @batch_end_time, 120);
 
-        PRINT '==========================================';
+        PRINT '===========================================================';
 
     END CATCH
 
