@@ -201,6 +201,6 @@ BEGIN
               + CAST((DATEDIFF(SECOND, @batch_start_time, @batch_end_time)%3600)/60 AS VARCHAR) + 'm '
               + CAST(DATEDIFF(SECOND, @batch_start_time, @batch_end_time)%60 AS VARCHAR) + 's';
 
-    PRINT '==========================================';
+    PRINT '==========================================':
 	END CATCH
 END
