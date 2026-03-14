@@ -1,3 +1,25 @@
+/*
+===============================================================================
+DDL Script: Create Silver Tables
+===============================================================================
+Script Purpose:
+    This script creates tables in the 'silver' schema of the data warehouse.
+
+    The Silver layer represents the cleaned and transformed data from the
+    Bronze layer. These tables store structured and standardized data that
+    is ready for further transformation and analytics.
+
+Key Features:
+    • Stores cleansed and standardized data
+    • Adds data warehouse metadata column (dwh_create_date)
+    • Supports the Medallion Architecture (Bronze → Silver → Gold)
+
+Usage:
+    Run this script to create or redefine the DDL structure of the
+    'silver' tables in the Data Warehouse.
+===============================================================================
+*/
+
 CREATE TABLE silver.crm_customer_info (
     customer_id             INT,
     customer_key            NVARCHAR(50),
