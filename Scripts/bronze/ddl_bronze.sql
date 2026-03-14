@@ -32,7 +32,7 @@ GO
 -- =====================================================
 
 -- -----------------------------------
--- CRM Customer Information
+-- CRM Customer Info
 -- -----------------------------------
 IF OBJECT_ID('bronze.crm_customer_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_customer_info;
@@ -52,7 +52,7 @@ GO
 
 
 -- -----------------------------------
--- CRM Product Information
+-- CRM Product Info
 -- -----------------------------------
 IF OBJECT_ID('bronze.crm_product_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_product_info;
