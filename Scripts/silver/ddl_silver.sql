@@ -30,8 +30,7 @@ CREATE TABLE silver.crm_customer_info (
     customer_lastname       NVARCHAR(50),
     customer_marital_status NVARCHAR(50),
     customer_gndr           NVARCHAR(50),
-    customer_create_date    DATE,
-    dwh_create_date         DATETIME2 DEFAULT GETDATE()
+    customer_create_date    DATE
 );
 
 ---------------------------------------------------------
@@ -42,14 +41,12 @@ DROP TABLE silver.crm_product_info;
 
 CREATE TABLE silver.crm_product_info (
     product_id              INT,
-    category_id             NVARCHAR(50),
     product_key             NVARCHAR(50),
     product_name            NVARCHAR(50),
     product_cost            INT,
     product_line            NVARCHAR(50),
     product_start_date      DATE,
-    product_end_date        DATE,
-    dwh_create_date         DATETIME2 DEFAULT GETDATE()
+    product_end_date        DATE
 );
 
 ---------------------------------------------------------
@@ -67,8 +64,7 @@ CREATE TABLE silver.crm_sales_details (
     sales_due_date          DATE,
     sales_sales             INT,
     sales_quantity          INT,
-    sales_price             INT,
-    dwh_create_date         DATETIME2 DEFAULT GETDATE()
+    sales_price             INT
 );
 
 ---------------------------------------------------------
@@ -80,8 +76,7 @@ DROP TABLE silver.erp_customer;
 CREATE TABLE silver.erp_customer (
     cid                     NVARCHAR(50),
     birth_date              DATE,
-    gender                  NVARCHAR(50),
-    dwh_create_date         DATETIME2 DEFAULT GETDATE()
+    gender                  NVARCHAR(50)
 );
 
 ---------------------------------------------------------
@@ -92,8 +87,7 @@ DROP TABLE silver.erp_location;
 
 CREATE TABLE silver.erp_location (
     cid                     NVARCHAR(50),
-    country                 NVARCHAR(50),
-    dwh_create_date         DATETIME2 DEFAULT GETDATE()
+    country                 NVARCHAR(50)
 );
 
 ---------------------------------------------------------
@@ -106,6 +100,5 @@ CREATE TABLE silver.erp_product_category (
     id                      NVARCHAR(50),
     category                NVARCHAR(50),
     sub_cat                 NVARCHAR(50),
-    maintenance             NVARCHAR(50),
-    dwh_create_date         DATETIME2 DEFAULT GETDATE()
+    maintenance             NVARCHAR(50)
 );
