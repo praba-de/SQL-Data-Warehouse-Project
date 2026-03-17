@@ -1,0 +1,12 @@
+│
+├── README.md
+│
+├── sql/
+│   ├── bronze/
+│   └── silver/
+│
+├── docs/
+│   ├── data_integration.drawio
+│   ├── data_lineage.drawio
+│   ├── dwh.drawio
+│   └── star_schema.drawio
