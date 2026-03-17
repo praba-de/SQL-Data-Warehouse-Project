@@ -27,3 +27,25 @@ Target Table:
 
 ===============================================================================
 */
+
+USE DataWarehouse;
+
+-- Load ERP Location
+
+INSERT INTO silver.erp_location (
+    cid,
+    country
+)
+SELECT 
+    REPLACE(cid, '-', ''),
+
+    CASE 
+        WHEN TRIM(country) = 'DE' THEN 'Germany'
+        WHEN TRIM(country) IN ('US', 'USA') THEN 'United States'
+        WHEN TRIM(country) = '' OR country IS NULL THEN 'N/A'
+        ELSE TRIM(country)
+    END
+
+FROM bronze.erp_location;
+---
+SELECT * FROM  silver.erp_location;
