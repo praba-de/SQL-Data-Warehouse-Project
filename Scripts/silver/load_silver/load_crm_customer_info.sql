@@ -78,4 +78,6 @@ FROM (
     WHERE customer_id IS NOT NULL
 ) t
 WHERE flag_last = 1;
+---
 
+select * from silver.crm_customer_info;
