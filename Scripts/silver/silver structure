@@ -4,10 +4,10 @@
    │   └── (raw scripts if any)
    │
    ├── silver/
-   │   ├── load_crm_customer_info.sql
-   │   ├── load_crm_product_info.sql
-   │   ├── load_crm_sales_details.sql
-   │   ├── load_erp_customer.sql
-   │   ├── load_erp_location.sql
-   │   └── load_erp_product_category.sql
+      ├── load_crm_customer_info.sql
+      ├── load_crm_product_info.sql
+      ├── load_crm_sales_details.sql
+      ├── load_erp_customer.sql
+      ├── load_erp_location.sql
+      └── load_erp_product_category.sql
 
