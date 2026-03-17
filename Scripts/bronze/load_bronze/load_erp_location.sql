@@ -24,7 +24,7 @@ BEGIN
         FIELDTERMINATOR = ',',
         TABLOCK
     );
-
+---
     PRINT 'Completed in ' + 
     CAST(DATEDIFF(SECOND, @start_time, GETDATE()) AS VARCHAR) + ' seconds';
 
