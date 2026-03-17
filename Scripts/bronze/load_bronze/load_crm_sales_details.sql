@@ -29,3 +29,4 @@ BEGIN
     CAST(DATEDIFF(SECOND, @start_time, GETDATE()) AS VARCHAR) + ' seconds';
 
 END;
+---
