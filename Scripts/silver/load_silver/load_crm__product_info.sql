@@ -80,3 +80,4 @@ SELECT
 FROM bronze.crm_product_info;
 ---
 select * from silver.crm_product_info;
+---
