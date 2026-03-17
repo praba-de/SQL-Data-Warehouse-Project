@@ -1,7 +1,7 @@
 
 ├── sql/
    ├── bronze/
-   │   └── (raw scripts if any)
+   │   └── (raw scripts)
    │
    ├── silver/
       ├── load_crm_customer_info.sql
