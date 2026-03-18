@@ -1,0 +1,22 @@
+│   ├── bronze/
+│   │   ├── load_bronze_master.sql
+│   │   ├── bronze_load_crm_customer_info.sql
+│   │   ├── bronze_load_crm_product_info.sql
+│   │   ├── bronze_load_crm_sales_details.sql
+│   │   ├── bronze_load_erp_customer.sql
+│   │   ├── bronze_load_erp_location.sql
+│   │   └── bronze_load_erp_product_category.sql
+│
+│   ├── silver/
+│   │   ├── load_silver_master.sql
+│   │   ├── silver_load_crm_customer_info.sql
+│   │   ├── silver_load_crm_product_info.sql
+│   │   ├── silver_load_crm_sales_details.sql
+│   │   ├── silver_load_erp_customer.sql
+│   │   ├── silver_load_erp_location.sql
+│   │   └── silver_load_erp_product_category.sql
+│
+│   └── gold/
+│       ├── create_dim_customers.sql
+│       ├── create_dim_products.sql
+│       └── create_fact_sales.sql
