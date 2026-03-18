@@ -60,3 +60,4 @@ LEFT JOIN gold.dim_products dp
 
 LEFT JOIN gold.dim_customers dc
     ON sd.sales_customer_id = dc.customer_id;
+---
