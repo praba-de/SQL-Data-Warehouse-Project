@@ -7,15 +7,14 @@ Load ERP Location (CSV → Bronze)
 ===============================================================================
 */
 
-CREATE OR ALTER PROCEDURE bronze.load_erp_location
+CREATE PROCEDURE bronze.load_erp_location
 AS
 BEGIN
 
-    DECLARE @start_time DATETIME = GETDATE();
+    DECLARE @start_time = GETDATE();
 
     PRINT 'Loading: bronze.erp_location';
 
-    TRUNCATE TABLE bronze.erp_location;
 
     BULK INSERT bronze.erp_location
     FROM 'datasets/source_erp/LOCATION.csv'
@@ -25,7 +24,7 @@ BEGIN
         TABLOCK
     );
 ---
-    PRINT 'Completed in ' + 
+    PRINT 'Completed... ' + 
     CAST(DATEDIFF(SECOND, @start_time, GETDATE()) AS VARCHAR) + ' seconds';
 
 END;
